@@ -19,6 +19,24 @@
         اللي رفيجك يتابعها Animeتحتوي على مسلسلات ال myFriendAnime المصفوفة الثانية
       */
 
+
+
+
+      let myAnime =[
+        "Hunter x Hunter",
+        "Attack on titan",
+        "dragonball"
+      ]
+
+
+      let MyFriendAnime = [
+        "Hunter x Hunter",
+        "narotu",
+        "one piece"
+    ]
+ 
+      let mutualAnime = [];
+
       // 2
       // mutualAnime عرف مصفوفة فاضية سمها
 
@@ -28,6 +46,43 @@
 
       // ودك تشوف اللستة المشتركة بينكم على الموقع؟
       // 🏃🏻‍♂️ ادخل على صفحة الموقع في المتصفح
+
+      
+      for (let index = 0; index < myAnime.length; index++) {
+        const element1 = myAnime[index];
+        for (let index = 0; index < MyFriendAnime.length; index++) {
+          const element2 = MyFriendAnime[index];
+          if (element1 == element2){
+            console.log(mutualAnime.push(element1));}
+        }
+      }
+
+    //  function Mutual(myAnime, myFriendAnime){
+    //     let mutualAnime = [];
+    //    for (let i = 0; i < myAnime.length; i++) {
+    //      const element = myAnime[index];
+    //      for (let j = 0; j < myFriendAnime.length; j++) {
+    //        const element = myFriendAnime[index];
+           
+    //       if(myAnime[i] == myFriendAnime[j]){
+    //         mutualAnime.push(myAnime[i]);
+    //       } 
+    //      }
+    //     }
+    //     return mutualAnime;
+    //   }
+
+
+
+
+
+
+
+
+
+
+
+
 
       let ul = document.createElement("ul");
       ul.className = "myList";
